@@ -71,10 +71,10 @@ on how to install them):
   Application Programming Interface (API), you can install the JDT ASTView plugin.
   The lectures assume that you have installed this plug-in.
 
-* `ASM Bytecode Outline <https://plugins.jetbrains.com/plugin/5918>`__
+* [ASM Bytecode Viewer](http://plugins.jetbrains.com/plugin/10302-asm-bytecode-viewer)
 
   The example project uses ASM for generating Java class files.
-  To help you understand ASM API, you can install the ASM plugin.
+  To help you understand ASM API, you can install the ASM Bytecode Viewer plugin.
 
 * `Scala <https://plugins.jetbrains.com/plugin/1347>`__
 
