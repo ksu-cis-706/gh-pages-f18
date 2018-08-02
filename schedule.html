@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Schedule &#8212; CIS 706: Translator Design I, Fall 2018</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/cis706.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Syllabus" href="syllabus.html" />
+    <link rel="prev" title="Projects" href="projects.html" />
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Home</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="advice.html">Advice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#how-to-survive-in-this-course">How To Survive in This Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#how-to-interact-with-the-instructor">How To Interact With The Instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#some-other-notes-for-interacting-with-the-instructor">Some Other Notes For Interacting With The Instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#feedback">Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#what-do-professors-do-besides-teaching">What Do Professors Do Besides Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#cis-account">CIS Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#github-account">GitHub Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#course-software-infrastructure">Course Software Infrastructure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#staticjava-compiler-examples-and-slides">StaticJava Compiler, Examples, and Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#k-state-cs-laboratories">K-State CS Laboratories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#rdp-clients">RDP Clients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#x2go-clients">X2Go Clients</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#example-project-static-java-compiler-sjc">Example Project – Static Java Compiler (sjc)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#solo-project-extended-static-java-compiler-esjc">Solo Project – Extended Static Java Compiler (esjc)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#course-topics">Course Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#philosophy">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#books">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#schedule">Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#credits">Credits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading">Grading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading-policy">Grading Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading-scale">Grading Scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#computer-access">Computer Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#attendance-policy">Attendance Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#statement-regarding-academic-honesty">Statement Regarding Academic Honesty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#other-administrative-issues">Other Administrative Issues</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="schedule">
+<span id="id1"></span><h1>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h1>
+<h3>CIS 706: Translator Design I, Fall 2018</h3><hr class="docutils" />
+<p><strong>Links</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://goo.gl/jODYcY">Lecture Slides</a></li>
+<li><a class="reference external" href="https://k-state.instructure.com/courses/36964/files/">K-State Online</a></li>
+</ul>
+<hr class="docutils" />
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="15%" />
+<col width="20%" />
+<col width="30%" />
+<col width="15%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Week. Lab: Date</th>
+<th class="head">Lectures</th>
+<th class="head">Reading</th>
+<th class="head">Lab</th>
+<th class="head">Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ol class="first last arabic simple">
+<li>T: Aug 21</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Course Overview</li>
+<li>Scanners</li>
+<li>Parsers</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 1 - 2.3 &amp; Ch. 3</li>
+<li><a class="reference external" href="https://www.jetbrains.com/idea/documentation/">IntelliJ</a> documentations &amp; tutorials</li>
+<li><a class="reference external" href="http://git-scm.com">Git</a> documentations &amp; tutorials</li>
+<li><a class="reference external" href="http://junit.org">JUnit</a> documentation &amp; tutorials</li>
+</ul>
+</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Install <a class="reference external" href="https://github.com/sireum/v3#sireum-integrated-verification-environment-ive">Sireum v3 IVE</a> (or <a class="reference external" href="https://www.jetbrains.com/idea/">IntelliJ</a> + plugins, see <a class="reference internal" href="notes.html#notes"><span class="std std-ref">Notes</span></a>)</li>
+<li>Setup: Example Project</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="2">
+<li>T: Aug 28</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Top-down Parsers</li>
+<li>ANTLR4</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 2.4 - 2.9 &amp; Ch. 4</li>
+<li><a class="reference external" href="http://antlr.org">ANTLR4</a> Book/Documentation</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 1: Scanners &amp; Parsers</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li><a class="reference external" href="https://k-state.instructure.com/files/3574102/">Demo: ANTLR v4 grammar plugin</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="3">
+<li>T: Sep 4</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Abstract Syntax Tree</li>
+<li>Eclipse JDT</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 4 &amp; 5</li>
+<li><a class="reference external" href="http://help.eclipse.org/">Eclipse JDT Documentation</a></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 2: Top-down Parsers</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Solo Project 1: Scanner &amp; Parser (due <strong>Sep 17, 11:59pm, US Central</strong>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="4">
+<li>T: Sep 11</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Symbol Table</li>
+<li>Type Checking</li>
+<li>Bottom-up Parsers</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 2.7 &amp; Ch. 6.1 - 6.5</li>
+</ul>
+</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Demo: <a class="reference external" href="https://plugins.jetbrains.com/plugin/9345">JDT AstView Plugin</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="5">
+<li>T: Sep 18</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Virtual Machine</li>
+<li>Code Generation: Eclipse JDT to Java bytecode using ASM</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 6.6 - 6.9 &amp; Ch. 8.1-8.6</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 3: AST, Symbol Table, and Type Checking</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Solo Project 2: Abstract Syntax Tree (due <strong>Oct 1, 11:59, US Central</strong>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="6">
+<li>T: Sep 25</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Bytecode Optimization</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Dragon Ch. 8.7</li>
+<li><a class="reference external" href="http://java.sun.com/docs/books/jvms/">JVM Specification</a></li>
+<li><a class="reference external" href="http://asm.ow2.org">ASM</a> Documentation and API</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 4: Virtual Machine &amp; Bytecode Generation</li>
+</ul>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="7">
+<li>T: Oct 2</li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Final Project: TBA</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Solo Project 3: Type Checking (due <strong>Oct 15, 11:59pm, US Central</strong>)</li>
+<li>Final Project (due <strong>Dec 12, 11:59pm, US Central</strong>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="8">
+<li>T: Oct 9</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Static Analysis – Overview</li>
+<li>Static Analysis – Control Flow Graph (CFG)</li>
+<li>Static Analysis – Reaching Definition</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Nielson-Nielson-Hankin Ch. 1</li>
+<li>Dragon Ch. 9</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 5: Bytecode Optimization</li>
+</ul>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="9">
+<li>T: Oct 16</li>
+</ol>
+</td>
+<td><ul class="first last simple">
+<li>Static Analysis – Classic Problems</li>
+<li>Static Analysis – Monotone Dataflow Framework</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Nielson-Nielson-Hankin Ch. 2</li>
+<li>Dragon Ch. 9</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Quiz 6: CFG &amp; Reaching Definition Analysis</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Demo: <a class="reference external" href="https://plugins.jetbrains.com/plugin/5918">ASM Bytecode Outline Plugin</a></li>
+<li>Solo Project 4: Bytecode Generation (due <strong>Oct 29, 11:59pm, US Central</strong>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="10">
+<li>T: Oct 23</li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Quiz 7: Static Analysis – Classic Problems &amp; Monotone Dataflow Framework</li>
+</ul>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="11">
+<li><em>No Lab</em></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Exam Preparation</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="12">
+<li>T: Nov 6</li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Exam</strong>: TBA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="13">
+<li><em>No Lab</em></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Final Project</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last upperalpha simple">
+<li><strong>Thanksgiving Break</strong></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="14">
+<li><em>No Lab</em></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li>Final Project</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="first last arabic simple" start="15">
+<li><strong>Final Project Presentations</strong></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><ol class="first last arabic simple" start="16">
+<li><strong>W: Dec 12</strong></li>
+</ol>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li><strong>Final Project Due</strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Projects &#8212; CIS 706: Translator Design I, Fall 2018</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/cis706.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Schedule" href="schedule.html" />
+    <link rel="prev" title="Notes" href="notes.html" />
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Home</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="advice.html">Advice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#how-to-survive-in-this-course">How To Survive in This Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#how-to-interact-with-the-instructor">How To Interact With The Instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#some-other-notes-for-interacting-with-the-instructor">Some Other Notes For Interacting With The Instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#feedback">Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advice.html#what-do-professors-do-besides-teaching">What Do Professors Do Besides Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#cis-account">CIS Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#github-account">GitHub Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#course-software-infrastructure">Course Software Infrastructure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#staticjava-compiler-examples-and-slides">StaticJava Compiler, Examples, and Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#k-state-cs-laboratories">K-State CS Laboratories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#rdp-clients">RDP Clients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#x2go-clients">X2Go Clients</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example-project-static-java-compiler-sjc">Example Project – Static Java Compiler (sjc)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solo-project-extended-static-java-compiler-esjc">Solo Project – Extended Static Java Compiler (esjc)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#course-topics">Course Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#philosophy">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#books">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#schedule">Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#credits">Credits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading">Grading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading-policy">Grading Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#grading-scale">Grading Scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#computer-access">Computer Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#attendance-policy">Attendance Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#statement-regarding-academic-honesty">Statement Regarding Academic Honesty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syllabus.html#other-administrative-issues">Other Administrative Issues</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="projects">
+<span id="id1"></span><h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
+<h3>CIS 706: Translator Design I, Fall 2018</h3><hr class="docutils" />
+<div class="section" id="example-project-static-java-compiler-sjc">
+<h2>Example Project – Static Java Compiler (sjc)<a class="headerlink" href="#example-project-static-java-compiler-sjc" title="Permalink to this headline">¶</a></h2>
+<p>Static Java Compiler (sjc) is a compiler for a strict “static” (procedural)
+subset of Java (a compiler for structured programs in Java without objects).
+This project is used to illustrate various concepts in designing and
+implementing a translator.</p>
+<div class="section" id="features-limitations-of-static-java">
+<h3>Features/Limitations of Static Java<a class="headerlink" href="#features-limitations-of-static-java" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Only two variable types: boolean and int</li>
+<li>No objects (thus, no exception handling), arrays, or threads</li>
+<li>Only static fields and methods</li>
+<li>Method return type can be the above type and void</li>
+<li>No method overloading</li>
+<li>Can call Java library static methods (e.g., Integer.parseInt())</li>
+<li>Consists only one class that has a Java main method (String array is allowed
+here)</li>
+<li>No increment and decrement expressions</li>
+<li>No package declaration (i.e., the declared class lives in the default package)</li>
+<li>All code must be in one file, etc.</li>
+</ul>
+</div>
+<div class="section" id="concrete-syntax-of-static-java">
+<h3>Concrete Syntax of Static Java<a class="headerlink" href="#concrete-syntax-of-static-java" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;program&gt;                     ::= &lt;class-declaration&gt;
+&lt;class-declaration&gt;           ::= &quot;public&quot; &quot;class&quot; ID &quot;{&quot; &lt;main-method-declaration&gt; &lt;field-or-method-declaration&gt;* &quot;}&quot;
+&lt;main-method-declaration&gt;     ::= &quot;public&quot; &quot;static&quot; &quot;void&quot; &quot;main&quot; &quot;(&quot; &quot;String&quot; &quot;[&quot; &quot;]&quot; ID &quot;)&quot; &quot;{&quot; &lt;method-body&gt; &quot;}&quot;
+&lt;field-or-method-declaration&gt; ::= &lt;field-declaration&gt; | &lt;method-declaration&gt;
+&lt;field-declaration&gt;           ::= &quot;static&quot; &lt;type&gt; ID &quot;;&quot;
+&lt;method-declaration&gt;          ::= &quot;static&quot; &lt;return-type&gt; ID &quot;(&quot; &lt;params&gt;? &quot;)&quot; &quot;{&quot; &lt;method-body&gt; &quot;}&quot;
+&lt;type&gt;                        ::= &quot;boolean&quot; | &quot;int&quot;
+&lt;return-type&gt;                 ::= &lt;type&gt; | &quot;void&quot;
+&lt;params&gt;                      ::= &lt;param&gt; ( &quot;,&quot; &lt;param&gt; )*
+&lt;param&gt;                       ::= &lt;type&gt; ID
+&lt;method-body&gt;                 ::= &lt;local-declaration&gt;* &lt;statement&gt;*
+&lt;local-declaration&gt;           ::= &lt;type&gt; ID &quot;;&quot;
+&lt;statement&gt;                   ::= &lt;assign-statement&gt;
+                                | &lt;if-statement&gt;
+                                | &lt;while-statement&gt;
+                                | &lt;invoke-exp-statement&gt;
+                                | &lt;return-statement&gt;
+&lt;assign-statement&gt;            ::= ID &quot;=&quot; &lt;exp&gt; &quot;;&quot;
+&lt;if-statement&gt;                ::= &quot;if&quot; &quot;(&quot; &lt;exp&gt; &quot;)&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot; ( &quot;else&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot; )?
+&lt;while-statement&gt;             ::= &quot;while&quot; &quot;(&quot; &lt;exp&gt; &quot;)&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot;
+&lt;invoke-exp-statement&gt;        ::= &lt;invoke-exp&gt; &quot;;&quot;
+&lt;return-statement&gt;            ::= &quot;return&quot; &lt;exp&gt;? &quot;;&quot;
+&lt;exp&gt;                         ::= &lt;literal-exp&gt;
+                                | &lt;unary-exp&gt;
+                                | &lt;paren-exp&gt;
+                                | &lt;binary-exp&gt;
+                                | &lt;invoke-exp&gt;
+                                | &lt;var-ref&gt;
+&lt;literal-exp&gt;                 ::= &lt;boolean-literal&gt; | INT
+&lt;boolean-literal&gt;             ::= &quot;true&quot; | &quot;false&quot;
+&lt;unary-exp&gt;                   ::= &lt;unary-op&gt; &lt;exp&gt;
+&lt;unary-op&gt;                    ::= &quot;+&quot; | &quot;-&quot; | &quot;!&quot;
+&lt;binary-exp&gt;                  ::= &lt;exp&gt; &lt;binary-op&gt; &lt;exp&gt;
+&lt;binary-op&gt;                   ::= &quot;+&quot; | &quot;-&quot; | &quot;*&quot; | &quot;/&quot; | &quot;%&quot; | &quot;&gt;&quot; | &quot;&gt;=&quot; | &quot;==&quot; | &quot;&lt;&quot; | &quot;⇐&quot; | &quot;!=&quot; | &quot;&amp;&amp;&quot; | &quot;||&quot;
+&lt;paren-exp&gt;                   ::= &quot;(&quot; &lt;exp&gt; &quot;)&quot;
+&lt;invoke-exp&gt;                  ::= ( ID &quot;.&quot; )? ID &quot;(&quot; &lt;args&gt;? &quot;)&quot;
+&lt;args&gt;                        ::= &lt;exp&gt; ( &quot;,&quot; &lt;exp&gt; )*
+&lt;var-ref&gt;                     ::= ID
+
+ID                              = ( ‘a’..’z’ | ‘A’..’Z’ | ‘_’ | ‘$’ ) ( ‘a’..’z’ | ‘A’..’Z’ | ‘_’ | ‘0’..’9’ | ‘$’ )*
+INT                             = ‘0’ | (’1’..’9’) (’0’..’9’)*
+</pre></div>
+</div>
+</div>
+<div class="section" id="static-java-as-implemented-in-eclipse-jdt-asm-and-jvm-bytecode">
+<h3>Static Java as implemented in Eclipse JDT, ASM, and JVM Bytecode<a class="headerlink" href="#static-java-as-implemented-in-eclipse-jdt-asm-and-jvm-bytecode" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="19%" />
+<col width="27%" />
+<col width="27%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">StaticJava</th>
+<th class="head">Eclipse JDT (org.eclipse.jdt.core.dom.*)</th>
+<th class="head">ASM (org.objectweb.asm.tree.*)</th>
+<th class="head">JVM Bytecode</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&lt;program&gt;</td>
+<td>CompilationUnit</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;class-declaration&gt;</td>
+<td>TypeDeclaration</td>
+<td>ClassNode</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td>&lt;main-method-declaration&gt;</td>
+<td>MethodDeclaration</td>
+<td>MethodNode</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;field-declaration&gt;</td>
+<td>FieldDeclaration</td>
+<td>FieldNode</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td>&lt;method-declaration&gt;</td>
+<td>MethodDeclaration</td>
+<td>MethodNode</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;type&gt;</td>
+<td>Type (PrimitiveType)</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td>&lt;return-type&gt;</td>
+<td>PrimitiveType</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;param&gt;</td>
+<td>SingleVariableDeclaration</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td>&lt;method-body&gt;</td>
+<td>Block</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;local-declaration&gt;</td>
+<td>VariableDeclarationStatement</td>
+<td>LocalVariableNode</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td>&lt;assign-statement&gt;</td>
+<td>ExpressionStatement (Assignment)</td>
+<td>VarInsnNode</td>
+<td>ISTORE, PUTSTATIC</td>
+</tr>
+<tr class="row-odd"><td>&lt;if-statement&gt;</td>
+<td>IfStatement</td>
+<td>JumpInsnNode</td>
+<td>IF_xxx, GOTO</td>
+</tr>
+<tr class="row-even"><td>&lt;while-statement&gt;</td>
+<td>WhileStatement</td>
+<td>JumpInsnNode</td>
+<td>IF_xxx, GOTO</td>
+</tr>
+<tr class="row-odd"><td>&lt;invoke-exp-statement&gt;</td>
+<td>ExpressionStatement (MethodInvocation)</td>
+<td>MethodInsnNode</td>
+<td>INVOKESTATIC</td>
+</tr>
+<tr class="row-even"><td>&lt;return-statement&gt;</td>
+<td>ReturnStatement</td>
+<td>InsnNode</td>
+<td>RETURN, IRETURN</td>
+</tr>
+<tr class="row-odd"><td>&lt;literal-exp&gt;</td>
+<td>BooleanLiteral, NumberLiteral</td>
+<td>InsnNode</td>
+<td>ICONST_M1, ICONST_0, ICONST_1, ICONST_2, ICONST_3, ICONST_4, ICONST_5, BIPUSH, SIPUSH, LDC</td>
+</tr>
+<tr class="row-even"><td>&lt;unary-exp&gt;</td>
+<td>PrefixExpression</td>
+<td>IntInsnNode, JumpInsnNode</td>
+<td>INEG, IF_EQ</td>
+</tr>
+<tr class="row-odd"><td>&lt;binary-exp&gt;</td>
+<td>InfixExpression</td>
+<td>InsnNode, JumpInsnNode</td>
+<td>IADD, ISUB, IMUL, IDIV, IREM, INEG, IF_xxx, GOTO</td>
+</tr>
+<tr class="row-even"><td>&lt;paren-exp&gt;</td>
+<td>ParenthesizedExpression</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td>&lt;invoke-exp&gt;</td>
+<td>MethodInvocation</td>
+<td>MethodInsnNode</td>
+<td>INVOKESTATIC</td>
+</tr>
+<tr class="row-even"><td>&lt;var-ref&gt;</td>
+<td>SimpleName</td>
+<td>VarInsnNode, FieldInsnNode</td>
+<td>ILOAD, GETSTATIC</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Miscellaneous: POP, POP2, DUP, DUP_X1, DUP_X2, DUP2, DUP2_X1, DUP2_X2, SWAP</p>
+</div>
+</div>
+<div class="section" id="solo-project-extended-static-java-compiler-esjc">
+<h2>Solo Project – Extended Static Java Compiler (esjc)<a class="headerlink" href="#solo-project-extended-static-java-compiler-esjc" title="Permalink to this headline">¶</a></h2>
+<p>Extended Static Java Compiler (esjc) is a compiler for a strict “static” subset
+of Java that extends the Static Java compiler by including, for example, heap
+objects/arrays.
+This project serves as an individual mini-project for students to demonstrate
+their understandings of the essential concepts in designing and implementing a
+translator.</p>
+<div class="section" id="features-limitations-of-extended-static-java">
+<h3>Features/Limitations of Extended Static Java<a class="headerlink" href="#features-limitations-of-extended-static-java" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Allows user-defined class and (one-dimensional) array types</li>
+<li>No threads</li>
+<li>Only static fields and methods for the main (public) class, and public
+(non-static) fields for the rest.</li>
+<li>Method return type can be the above type and void</li>
+<li>No method overloading</li>
+<li>Can call Java library static methods (e.g., Integer.parseInt())</li>
+<li>Consists only one public class that has a Java main method, and non-public
+classes</li>
+<li>No increment and decrement expressions</li>
+<li>No package declaration (i.e., the declared class lives in the default package)</li>
+<li>All code must be in one file, etc.</li>
+</ul>
+</div>
+<div class="section" id="concrete-syntax-of-extended-static-java">
+<h3>Concrete Syntax of Extended Static Java<a class="headerlink" href="#concrete-syntax-of-extended-static-java" title="Permalink to this headline">¶</a></h3>
+<p>Note: non-terminals with ! are new or modified (wrt. StaticJava concrete syntax)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;program ! &gt;                  ::= &lt;simple-class-declaration&gt;* &lt;class-declaration&gt; &lt;simple-class-declaration&gt;*
+&lt;simple-class-declaration ! &gt; ::= &quot;class&quot; ID &quot;{&quot; &lt;public-field-declaration&gt;* &quot;}&quot;
+&lt;public-field-declaration ! &gt; ::= &quot;public&quot; &lt;type&gt; ID &quot;;&quot;
+&lt;class-declaration&gt;           ::= &quot;public&quot; &quot;class&quot; ID &quot;{&quot; &lt;main-method-declaration&gt; &lt;field-or-method-declaration&gt;* &quot;}&quot;
+&lt;main-method-declaration&gt;     ::= &quot;public&quot; &quot;static&quot; &quot;void&quot; &quot;main&quot; &quot;(&quot; &quot;String&quot; &quot;[&quot; &quot;]&quot; ID &quot;)&quot; &quot;{&quot; &lt;method-body&gt; &quot;}&quot;
+&lt;field-or-method-declaration&gt; ::= &lt;field-declaration&gt; | &lt;method-declaration&gt;
+&lt;field-declaration&gt;           ::= &quot;static&quot; &lt;type&gt; ID &quot;;&quot;
+&lt;method-declaration&gt;          ::= &quot;static&quot; &lt;return-type&gt; ID &quot;(&quot; &lt;params&gt;? &quot;)&quot; &quot;{&quot; &lt;method-body&gt; &quot;}&quot;
+&lt;type ! &gt;                     ::= ( &lt;basic-type&gt; | ID ) ( &quot;[&quot; &quot;]&quot; )?
+&lt;basic-type&gt;                  ::= &quot;boolean&quot; | &quot;int&quot;
+&lt;return-type&gt;                 ::= &lt;type&gt; | &quot;void&quot;
+&lt;params&gt;                      ::= &lt;param&gt; ( &quot;,&quot; &lt;param&gt; )*
+&lt;param&gt;                       ::= &lt;type&gt; ID
+&lt;method-body&gt;                 ::= &lt;local-declaration&gt;* &lt;statement&gt;*
+&lt;local-declaration&gt;           ::= &lt;type&gt; ID &quot;;&quot;
+&lt;statement ! &gt;                ::= &lt;assign-statement&gt;
+                                | &lt;if-statement&gt;
+                                | &lt;while-statement&gt;
+                                | &lt;invoke-exp-statement&gt;
+                                | &lt;return-statement&gt;
+                                | &lt;for-statement&gt;
+                                | &lt;do-while-statement&gt;
+                                | &lt;inc-dec-statement&gt;
+&lt;assign-statement&gt;            ::= &lt;assign&gt; &quot;;&quot;
+&lt;assign&gt;                      ::= &lt;lhs&gt; &quot;=&quot; &lt;exp&gt;
+&lt;lhs ! &gt;                      ::= ID | &lt;exp&gt; &quot;.&quot; ID | &lt;exp&gt; &quot;[&quot; &lt;exp&gt; &quot;]&quot;
+&lt;if-statement&gt;                ::= &quot;if&quot; &quot;(&quot; &lt;exp&gt; &quot;)&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot; ( &quot;else&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot; )?
+&lt;while-statement&gt;             ::= &quot;while&quot; &quot;(&quot; &lt;exp&gt; &quot;)&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot;
+&lt;invoke-exp-statement&gt;        ::= &lt;invoke-exp&gt; &quot;;&quot;
+&lt;return-statement&gt;            ::= &quot;return&quot; &lt;exp&gt;? &quot;;&quot;
+&lt;for-statement ! &gt;            ::= &quot;for&quot; &quot;(&quot; &lt;for-inits&gt;? &quot;;&quot; &lt;exp&gt;? &quot;;&quot; &lt;for-updates&gt;? &quot;)&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot;
+&lt;for-inits ! &gt;                ::= &lt;assign&gt; ( &quot;,&quot; &lt;assign&gt; )*
+&lt;for-updates ! &gt;              ::= &lt;inc-dec&gt; ( &quot;,&quot; &lt;inc-dec&gt; )*
+&lt;inc-dec ! &gt;                  ::= &lt;lhs&gt; &quot;++&quot; | &lt;lhs&gt; &quot;––&quot;
+&lt;do-while-statement ! &gt;       ::= &quot;do&quot; &quot;{&quot; &lt;statement&gt;* &quot;}&quot; &quot;while&quot; &quot;(&quot; &lt;exp&gt; &quot;)&quot; &quot;;&quot;
+&lt;inc-dec-statement ! &gt;        ::= &lt;inc-dec&gt; &quot;;&quot;
+&lt;exp ! &gt;                      ::= &lt;literal-exp&gt;
+                                | &lt;unary-exp&gt;
+                                | &lt;binary-exp&gt;
+                                | &lt;paren-exp&gt;
+                                | &lt;invoke-exp&gt;
+                                | &lt;var-ref&gt;
+                                | &lt;new-exp&gt;
+                                | &lt;array-access-exp&gt;
+                                | &lt;field-access-exp&gt;
+                                | &lt;cond-exp&gt;
+&lt;literal-exp ! &gt;              ::= &lt;boolean-literal&gt; | INT | &quot;null&quot;
+&lt;boolean-literal&gt;             ::= &quot;true&quot; | &quot;false&quot;
+&lt;unary-exp&gt;                   ::= &lt;unary-op&gt; &lt;exp&gt;
+&lt;unary-op&gt;                    ::= &quot;+&quot; | &quot;-&quot; | &quot;!&quot; | &quot;~&quot;
+&lt;binary-exp&gt;                  ::= &lt;exp&gt; &lt;binary-op&gt; &lt;exp&gt;
+&lt;binary-op&gt;                   ::= &quot;+&quot; | &quot;-&quot; | &quot;*&quot; | &quot;/&quot; | &quot;%&quot; | &quot;&gt;&quot; | &quot;&gt;=&quot; | &quot;==&quot; | &quot;&lt;&quot; | &quot;&lt;=&quot; | &quot;!=&quot; | &quot;&amp;&amp;&quot; | &quot;||&quot; | &quot;&lt;&lt;&quot; | &quot;&gt;&gt;&quot; | &quot;&gt;&gt;&gt;&quot;
+&lt;paren-exp&gt;                   ::= &quot;(&quot; &lt;exp&gt; &quot;)&quot;
+&lt;invoke-exp&gt;                  ::= ( ID &quot;.&quot; )? ID &quot;(&quot; &lt;args&gt;? &quot;)&quot;
+&lt;args&gt;                        ::= &lt;exp&gt; ( &quot;,&quot; &lt;exp&gt; )*
+&lt;var-ref&gt;                     ::= ID
+&lt;cond-exp&gt;                    ::= &lt;exp&gt; &quot;?&quot; &lt;exp&gt; &quot;:&quot; &lt;exp&gt;
+&lt;new-exp&gt;                     ::= &quot;new&quot; ID &quot;(&quot; &quot;)&quot;
+                                | &quot;new&quot; ( &lt;basic-type&gt; | ID ) &quot;[&quot; &lt;exp&gt; &quot;]&quot;
+                                | &quot;new&quot; ( &lt;basic-type&gt; | ID ) &quot;[&quot; &quot;]&quot; &lt;array-init&gt;
+&lt;array-init&gt;                  ::= &quot;{&quot; &lt;exp&gt; ( &quot;,&quot; &lt;exp&gt; )* &quot;}&quot;
+&lt;field-access-exp&gt;            ::= &lt;exp&gt; &quot;.&quot; ID
+&lt;array-access-exp&gt;            ::= &lt;exp&gt; &quot;[&quot; &lt;exp&gt; &quot;]&quot;
+
+ID                              = ( ‘a’..’z’ | ‘A’..’Z’ | ‘_’ | ‘$’ ) ( ‘a’..’z’ | ‘A’..’Z’ | ‘_’ | ‘0’..’9’ | ‘$’ )*
+INT                             = ‘0’ | (’1’..’9’) (’0’..’9’)*
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

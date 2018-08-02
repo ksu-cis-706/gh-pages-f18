@@ -1,0 +1,262 @@
+.. _syllabus:
+
+Syllabus
+########
+
+.. raw:: html
+
+   <h3>CIS 706: Translator Design I, Fall 2018</h3>
+
+----
+
+.. include:: def.rst
+
+Purpose
+*******
+
+The course will teach modern compiler techniques applied to general-purpose
+programming language.
+The goal of the course is to give students a working knowledge of the
+foundations, tools, and engineering approaches used in developing formal
+language translators.
+The emphasis is on the construction of compilers to position students to build
+translators for little languages in their careers.
+
+
+Course Topics
+*************
+
+Compilers and interpreters, including description of languages, finite state
+scanners, parsing, symbol tables, syntax directed semantics, code generation,
+and static analysis.
+
+
+Philosophy
+**********
+
+This course is based on a course that was originally designed by
+|Laurie J. Hendren| and |Michael I. Schwartzbach| which has been taught at a
+number of universities over the past decade.
+The course received a significant update by |Robby| and |Matthew B. Dwyer| in
+2005 with respect to the projects and the tools that are used for compiler
+implementation; this update achieves a modernization of compiler construction
+technologies.
+This is primarily an introductory compiling course that has been designed to
+recognize that most people will not build a large application like a compiler
+from scratch and that people learn by doing.
+Towards this end, the project for the course involves the enhancement of an
+existing compiler code base.
+Students will be given a working compiler and will be required to extend it in
+significant ways.
+This will give them insights into how a compiler is designed and written that
+they can leverage for their enhancements.
+While serving this purpose, the course does present significantly more content
+on static analysis than is typically found in an introductory compiling course;
+thus it can serve as an effective introduction on advanced topics for graduate
+students.
+
+
+Books
+*****
+
+* `Compilers: Principles, Techniques, and Tools (2nd Edition) <http://www.pearsonhighered.com/pearsonhigheredus/educator/product/products_detail.page?isbn=0321486811>`__, 
+  a.k.a. "Purple Dragon Book" by Alfred V. Aho, Monica S. Lam, Ravi Sethi, 
+  Jeffrey D. Ullman (required)
+
+* `The Definitive ANLTR4 Reference <https://pragprog.com/book/tpantlr2/the-definitive-antlr-4-reference>`__, 
+  by Terence Parr (recommended)
+
+* `Principles of Program Analysis <http://www2.imm.dtu.dk/~riis/PPA/ppa.html>`__,
+  by Flemming Nielson, Hanne Riis Nielson, and Chris Hankin (recommended)
+
+* `Design Patterns: Elements of Reusable Object-Oriented Sofware <http://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610>`__,
+  by Erich Gamma, Richard Helm, Ralph Johnson, John M. Vlissides (recommended)
+
+
+Schedule
+********
+
+:Time: T U, 1:05-2:20pm
+:Place: 214 |Kedzie|
+
+
+Prerequisites
+*************
+
+* `CIS 501: Software Architecture and Design <http://courses.k-state.edu/catalog/undergraduate/en/cis.html#CIS501>`__
+* `CIS 505: Introduction to Programming Languages <http://courses.k-state.edu/catalog/undergraduate/en/cis.html#CIS505>`__
+* Java and C programming skills
+
+
+Credits
+*******
+
+3 credits
+
+
+Instructors
+***********
+
+* `Robby <http://cs.ksu.edu/~robby>`__
+
+  **Office:**       2181 |EngHall|
+
+  **E-mail:**       ``robby at k-state.edu``
+
+  **Office Hours:** by email appointment only
+
+
+Grading
+*******
+
+* Solo Project (30%)
+
+* Quizzes (15%)
+
+* Exam (25%)
+
+* Final Project (25%)
+
+* Final Project Presentation (5%)
+
+
+Grading Policy
+**************
+
+The course :ref:`schedule` page gives the due dates for all of the homework.
+This is to facilitate your planning and time-management.
+Given this, we expect assignments to be turned in on the due date unless prior
+arrangements have been made; late assignments receive a reduction of 1% of the
+total possible points for each hour after the due date/time.
+
+
+Grading Scale
+*************
+
+Course grades are absolute, that is, there is no curve, and will be calculated
+based on your overall percentage on assignments as follows:
+
+* A: 90% -- 100%
+
+* B: 80% -- 89%
+
+* C: 70% -- 79%
+
+* D: 60% -- 69%
+
+* F: below 60%
+
+There is one additional constraint on your final grade.
+To receive a letter grade of A, you must achieve at least a B on the exam.
+Similarly, to receive a B you must achieve a C, C you must achieve a D on the
+exam. 
+
+
+Computer Access
+***************
+
+This course involves a lot of programming, and it makes significant use of 
+software tools. 
+Many of these can be accessed by you (for free) and installed on your own 
+machine.
+If you prefer, we have everything you need on our CIS department machines so you
+can get an account on our machines.
+See the :ref:`notes` page for information on how to get an account and use our
+machines.
+
+
+Attendance Policy
+*****************
+
+In general, there will be NO make-up quizzes or exams!
+Special consideration will be given in only exceptional circumstances.
+Exceptional circumstances are generally limited to:
+
+* **Emergencies:** death in student's immediate family, or 
+  near-death experience of the student.
+
+* **Non-emergencies:** certified excused absences for official university activities.
+
+If you believe you qualify for exceptional treatment, you must notify the
+instructor prior to the date of the quiz or exam to be missed.
+
+
+Statement Regarding Academic Honesty
+************************************
+
+Kansas State University has an Honor System based on personal integrity, which 
+is presumed to be sufficient assurance in academic matters one's work is
+performed honestly and without unauthorized assistance. 
+Undergraduate and graduate students, by registration, acknowledge the
+jurisdiction of the Honor System.
+The policies and procedures of the Honor System apply to all full and part-time
+students enrolled in undergraduate and graduate courses on-campus, off-campus,
+and via distance learning.
+The honor system website can be reach via the following URL: 
+http://www.ksu.edu/honor.
+
+A component vital to the Honor System is the inclusion of the Honor Pledge which
+applies to all assignments, examinations, or other course work undertaken by
+students.
+The Honor Pledge is implied, whether or not it is stated:
+"On my honor, as a student, I have neither given nor received unauthorized aid
+on this academic work."
+A grade of XF can result from a breach of academic honesty.
+The F indicates failure in the course; the X indicates the reason is an Honor
+Pledge violation.
+
+
+Other Administrative Issues
+***************************
+
+* **Incompletenes:** An incomplete (I) final grade will be given only by prior
+  arrangement in exceptional circumstances conforming to departmental policy in
+  which the bulk of course work has been completed in passing fashion.
+
+* **Drop Policy:** It is your responsibility to drop the course if you are
+  enrolled but decide not to complete the course --- there are no "automatic"
+  drops due to nonattendance.
+  The University allows a retake of a course with removal of the prior grade,
+  at most once per course, for a maximum of five courses.
+  
+* **Students with Disabilities:** If you have any physical or learning
+  disability which will make it difficult for you to carry out the work as
+  I have outlined in this syllabus or which will require academic
+  accommodations, please notify me the first two weeks of the course.
+
+* **Harrassment:** One purpose of your education is to help you develop skills,
+  approaches, and abilities that are necessary for effective teamwork, and for
+  your success in your profession and as a citizen.
+  It is important that you understand your rights and responsibilities regarding
+  the University's Sexual and Racial Harassment policies (full text of the
+  policies can be found on KSU's web site at
+  http://www.ksu.edu/uauc/fhbook/fhxj.html).
+  If you experience any situations, in or out of class, that seem inappropriate
+  or that make you uncomfortable, a list of resources and courses of action to
+  assist you can be found on the College of Engineering web site at
+  http://www.engg.ksu.edu/harassment-statement.
+
+* **Expectations for Classroom Conduct:** All student activities in the
+  University, including this course, are governed by the Student Judicial
+  Conduct Code as outlined in the Student Government Association By Laws,
+  Article VI, Section 3, number 2.
+  Students that engage in behavior that disrupts the learning environment may be
+  asked to leave the class.
+
+* **Campus Safety:** Kansas State University is committed to providing a safe
+  teaching and learning environment for student and faculty members.
+  In order to enhance your safety in the unlikely case of a campus emergency
+  make sure that you know where and how to quickly exit your classroom and how
+  to follow any emergency directives.
+  To view additional campus emergency information go to the University's main
+  page, http://www.k-state.edu, and click on the Emergency Information button.
+
+* **Copyright Issues:** Class and lecture notes for this course carry a
+  copyright.
+  Students are prohibited from selling (or being paid for taking) notes during
+  this course to or by any person or commercial firm without the express written
+  permission of the professor teaching this course.
+
+For a more complete discussion of these issues see the course policies for the
+College of Engineering at Kansas State University: 
+http://www.cis.ksu.edu/resources/intradept/syllabuspolicies.
