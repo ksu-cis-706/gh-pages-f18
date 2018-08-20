@@ -104,7 +104,7 @@ Sireum IVE can be launched by using the start menu item ``Sireum`` (or ``Sireum3
 for the 32-bit version) or by issuing the command-line ``idea64`` or ``idea``.
 Sireum CLI can be launched by issuing the command-line ``sireum``.
 
-The absolute path to ``SIREUM_HOME`` is ``\\files.cs.ksu.edu\santos\sireum\win64\Sireum``.
+The absolute path to ``SIREUM_HOME`` is ``C:\Sireum``.
 
 
 CS Linux Machines
