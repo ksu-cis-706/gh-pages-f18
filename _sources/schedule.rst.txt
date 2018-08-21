@@ -31,7 +31,7 @@ Schedule
      - Lab
      - Remarks
    * - 1. T: Aug 21
-     - * Course Overview
+     - * `Course Overview <https://k-state.instructure.com/files/6867611>`__
        * Scanners
        * Parsers
      - * Dragon Ch. 1 - 2.3 & Ch. 3
@@ -111,7 +111,7 @@ Schedule
    * - 12. T: Nov 6
      -
      -
-     - **Exam**: TBA
+     - **Exam**: 1:05-2:55pm
      -
    * - 13. *No Lab*
      -
