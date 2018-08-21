@@ -36,7 +36,7 @@ Schedule
        * Parsers
      - * Dragon Ch. 1 - 2.3 & Ch. 3
        * `IntelliJ <https://www.jetbrains.com/idea/documentation/>`__ documentations & tutorials
-       * `Git <http://git-scm.com>`__ documentations & tutorials
+       * `Git <http://git-scm.com>`__ documentations & tutorials (`Forks <https://help.github.com/articles/working-with-forks/>`__)
        * `JUnit <http://junit.org>`__ documentation & tutorials
      -
      - * Install |SireumIVE| (or |IntelliJ| + plugins, see :ref:`notes`)
