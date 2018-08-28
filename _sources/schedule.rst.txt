@@ -19,6 +19,8 @@ Schedule
 
   * `Lecture Videos <https://k-state.instructure.com/courses/60908/files/folder/Lectures>`__
 
+  * `Quizzes <https://k-state.instructure.com/courses/60908/files/folder/Quizzes>`__
+
 ----
 
 .. list-table::
@@ -128,6 +130,7 @@ Schedule
      -
      -
      - * Final Project
+       * *Instructor Travel (until Nov 28)*
    * - 15. **Final Project Presentations**
      -
      -
