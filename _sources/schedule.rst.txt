@@ -84,13 +84,13 @@ Schedule
      - * Final Project: TBA
      - * Solo Project 3: Type Checking (due **Oct 15, 11:59pm, US Central**)
        * Final Project (due **Dec 12, 11:59pm, US Central**)
-   * - 8. T: Oct 9
+   * - 8. *No Lab*
      - * Static Analysis -- Overview
        * Static Analysis -- Control Flow Graph (CFG)
        * Static Analysis -- Reaching Definition
      - * Nielson-Nielson-Hankin Ch. 1
        * Dragon Ch. 9
-     - * Quiz 5: Bytecode Optimization
+     - * Quiz 5: Bytecode Optimization (*take home*)
      -
    * - 9. T: Oct 16
      - * Static Analysis -- Classic Problems
@@ -105,11 +105,12 @@ Schedule
      -
      - * Quiz 7: Static Analysis -- Classic Problems & Monotone Dataflow Framework
      -
-   * - 11. *No Lab*
+   * - 11. T: Oct 30
      -
      -
      -
-     - * Exam Preparation
+     - * Quiz 5-7 Discussions
+       * *Instructor Travel*
    * - 12. T: Nov 6
      -
      -
