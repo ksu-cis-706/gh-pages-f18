@@ -81,7 +81,8 @@ Schedule
    * - 7. T: Oct 2
      -
      -
-     - * Final Project: TBA
+     - * `Final Project <https://k-state.instructure.com/files/7308209/>`__
+         [ `Garbage Collection <https://k-state.instructure.com/files/7310002/>`__ ]
      - * Solo Project 3: Type Checking (due **Oct 15, 11:59pm, US Central**)
        * Final Project (due **Dec 12, 11:59pm, US Central**)
    * - 8. *No Lab*
